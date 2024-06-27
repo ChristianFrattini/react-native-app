@@ -46,14 +46,14 @@ const VideoCard = ({
       </View>
 
       {play ? (
-        <Video //TO BE REVIEWED
+        <Video
           source={{ uri: video }}
           className="w-full h-60 rounded-xl mt-3 bg-white/10"
           resizeMode={ResizeMode.CONTAIN}
           useNativeControls
-          shouldPlay={true}
+          shouldPlay
           onPlaybackStatusUpdate={(status) => {
-            console.log("Playback Status:", status);
+            //console.log("Playback Status:", status);
             if (status.didJustFinish) {
               setPlay(false);
               //console.log(item.video);

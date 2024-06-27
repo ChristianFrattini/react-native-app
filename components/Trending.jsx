@@ -39,14 +39,14 @@ const TrendingItem = ({ activeItem, item }) => {
       duration={500}
     >
       {play ? (
-        <Video //TO BE REVIEWED
+        <Video
           source={{ uri: item.video }}
           className="w-52 h-72 rounded-[35px] mt-3 bg-white/10"
           resizeMode={ResizeMode.CONTAIN}
           useNativeControls
-          shouldPlay={true}
+          shouldPlay
           onPlaybackStatusUpdate={(status) => {
-            console.log("Playback Status:", status);
+            //console.log("Playback Status:", status);
             if (status.didJustFinish) {
               setPlay(false);
               //console.log(item.video);
