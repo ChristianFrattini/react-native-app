@@ -47,7 +47,7 @@ const VideoCard = ({
 
       {play ? (
         <Video //TO BE REVIEWED
-          source={{ uri: item.video }}
+          source={{ uri: video }}
           className="w-full h-60 rounded-xl mt-3 bg-white/10"
           resizeMode={ResizeMode.CONTAIN}
           useNativeControls
